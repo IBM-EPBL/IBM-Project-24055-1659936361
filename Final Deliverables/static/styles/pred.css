@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100%;
+  background: rgb(194, 252, 155);
+  align-items: center;
+  justify-content: center;
+}
+.heads{
+  color: rgb(53, 152, 0);
+  font-style: italic;
+  font-family:monospace;
+  position: absolute;
+  padding-top:15px;
+  top:10px;
+  align-items: center;
+  margin-left: 590px;
+}
+.container
+  {margin-top: 125px;
+    margin-left:350px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 850px;
+    height: 500px;
+    width: 850px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.container abbr{
+  text-decoration: none;
+}
+.container .img{
+    align-items: center;
+    background: url("girl-half.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    width: 850px;
+    opacity:1;
+}
+.title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-left:335px;
+    margin-top:80px;
+   
+  }
+  .title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: rgb(53, 152, 0);
+  }
+  .con_txt{
+    text-align: center; margin-top:50px;font-size:20px;font-weight:500; 
+  
+  }
+  .result{
+  color:rgb(53, 152, 0); font: size 70px; font-weight:700;
+  width:100px;margin-left:400px; text-align:center;background:#fff;
+  }
+  
+  .suggest{ 
+  text-align:center;
+    height:250px;
+    width:500px;
+    background-color: #fff;
+    align-items: center;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    margin-left: 200px;
+    padding:20px;
+  }  
+  .sug-con{
+  text-align:center;
+  background-color:red;
+  margin-left:30px;
+
+  }
+  ul{
+  margin-left:30px;
+  list-style-type:square;
+  list-style-position:outside;
+  }
+  li{
+  margin:5px;
+  }
