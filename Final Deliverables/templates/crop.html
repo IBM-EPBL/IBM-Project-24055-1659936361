@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab - youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+   <head>
+   <meta charset="UTF-8">
+   <title>Rainfall Prediction</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles/crops.css') }}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+   <div class="heads">
+      <h1>RAINFALL PREDICTION</h1>
+   </div>
+   <div class="container">
+   <div class="img"> 
+      <a href="{{ url_for('home') }}"><i class="fas fa-arrow-left" style="position: absolute;color:rgb(42, 42, 42);font-size:27px;margin-left:30px;margin-top:30px;" ></i></a>
+         <div class="title">Crops Details</div>
+               <div class="top">
+                   <div class="bbox">
+                   <p>
+                   <img src="{{ url_for('static', filename='crop/Apple.jpg') }}" width="160" height="175"></a>
+                   </p>
+                   <p style="width:575px ;">
+                      <b>Name:</b>Apple<br>
+                      <b>Season:</b>Spring<br>
+                      <b>Location:</b>Jammu & Kashmir,Himachal Pradesh,hills of Uttar Pradesh and Uttaranchal<br>
+                      <b>Rainfall Range</b>:100-125cm</p></div>
+
+                <div class="bbox">
+                    <p>
+                    <img src="{{ url_for('static', filename='crop/Banana.jpg') }}" width="160" height="175"></a>
+                    </p>
+                    <p style="width:575px ;">
+                      <b>Name:</b>Banana<br>
+                      <b>Season:</b>Winter<br>
+                      <b>Location:</b>AndhraPradesh,Maharashtra,Gujarat,Tamil Nadu,Karnataka,UttarPradesh,Bihar,West Bengal,Assam and Chattisgarh<br>
+                      <b>Rainfall Range</b>:200-250cm</p></div>
+                  <div class="bbox">
+                    <p>
+                    <img src="{{ url_for('static', filename='crop/Barley.jpg') }}" width="160" height="175"></a>
+                    </p>
+                    <p style="width:575px ;">
+                      <b>Name:</b>Barley<br>
+                      <b>Season:</b>Summer,Winter<br>
+                      <b>Location:</b>Rajasthan, Uttar Pradesh, Haryana, madhya pradesh<br>
+                      <b>Rainfall Range</b>:25-75cm</p></div>
+
+                   <div class="bbox">
+                          <p>
+                         <img src="{{ url_for('static', filename='crop/Beans.jpg') }}" width="160" height="175"></a>
+                         </p>
+                         <p style="width:575px ;">
+                          <b>Name:</b>Beans<br>
+                          <b>Season:</b>winter<br>
+                          <b>Location:</b>Uttar Pradesh, Madhya Pradesh, Haryana, West Bengal, Karnataka, Tamil Nadu, Kerala, Andhra Pradesh, Telangana, and Maharashtra<br>
+                          <b>Rainfall Range</b>:20-30cm</p></div>
+
+                    <div class="bbox">
+                       <p>
+                         <img src="{{ url_for('static', filename='crop/Beetroot.jpg') }}" width="160" height="175"></a>
+                         </p>
+                         <p style="width:575px ;">
+                           <b>Name:</b>Beetroot<br>
+                           <b>Season:</b>Monsoon<br>
+                           <b>Location:</b>Maharashtra, Haryana, Uttar Pradesh and Arunachal Pradesh<br>
+                           <b>Rainfall Range</b>:75-112.5cm</p></div>
+
+                    <div class="bbox">
+                         <p>
+                           <img src="{{ url_for('static', filename='crop/Bitter gourd.jpg') }}" width="160" height="175"></a>
+                            </p>
+                           <p style="width:575px ;">
+                              <b>Name:</b>Bitter gourd<br>
+                              <b>Season:</b>Summer and rainy season<br>
+                              <b>Location:</b>Maharashtra, Uttar Pradesh, Rajasthan,Assam, West Bengal, Tamil Nadu, Kerala, Punjab, odissa, Andhra Pradesh<br>
+                              <b>Rainfall Range</b>:48cm</p></div>
+
+                    <div class="bbox">
+                            <p>
+                            <img src="{{ url_for('static', filename='crop/Bottle gourd.jpg') }}" width="160" height="175"></a>
+                            </p>
+                            <p style="width:575px ;">
+                              <b>Name:</b>Bottle gourd<br>
+                              <b>Season:</b>Spring to early summer<br>
+                              <b>Location:</b>Bihar, Uttar Pradesh, Haryana, Madhya Pradesh, Chattisgarh, Orissa, Punjab, Assam, Andhra Pradesh <br>
+                              <b>Rainfall Range</b>:2.5cm</p></div>
+                              
+                    <div class="bbox">
+                          <p>
+                          <img src="{{ url_for('static', filename='crop/Brama kamal.jpg') }}" width="160" height="175"></a>
+                          </p>
+                          <p style="width:575px ;">
+                             <b>Name:</b>Brama kamal<br>
+                             <b>Season:</b>Spring and early summer<br>
+                             <b>Location:</b>Sikkim, Kashmir, Garhwal, Hemkund, Kedarnath and Chamoli<br>
+                             <b>Rainfall Range</b>:70cm</p></div>
+
+                     <div class="bbox">
+                            <p>
+                            <img src="{{ url_for('static', filename='crop/Brinjal.jpg') }}" width="160" height="175"></a>
+                            </p>
+                            <p style="width:575px ;">
+                               <b>Name:</b>Brinjal<br>
+                               <b>Season:</b>Summer<br>
+                               <b>Location:</b>West Bengal, Maharashtra, Uttar Pradesh, Karnataka, Bihar<br>
+                               <b>Rainfall Range</b>:60-100cm</p></div> 
+
+                     <div class="bbox">
+                            <p>
+                            <img src="{{ url_for('static', filename='crop/Broad beans.jpg') }}" width="160" height="175"></a>
+                            </p>
+                            <p style="width:575px ;">
+                               <b>Name:</b>Broad beans<br>
+                               <b>Season:</b>Autumn<br>
+                               <b>Location:</b>Utter Pradesh, Punjab, Haryana, Kashmir, Rajasthan, Karnataka, Madhya Pradesh and Bihar<br>
+                               <b>Rainfall Range</b>:60-100cm</p></div>
+                                   
+                      <div class="bbox">
+                            <p>
+                            <img src="{{ url_for('static', filename='crop/Broccoli.jpg') }}" width="160" height="175"></a>
+                            </p>
+                            <p style="width:575px ;">
+                               <b>Name:</b>Broccoli<br>
+                               <b>Season:</b>Winter and spring<br>
+                               <b>Location:</b>Maharashtra<br>
+                               <b>Rainfall Range</b>:80-100cm</p></div>
+                                     
+                      <div class="bbox">
+                             <p>
+                            <img src="{{ url_for('static', filename='crop/Capsicum.jpg') }}" width="160" height="175"></a>
+                            </p>
+                            <p style="width:575px ;">
+                               <b>Name:</b>Capsicum<br>
+                               <b>Season:</b>Spring and summer<br>
+                               <b>Location:</b>Tamil Nadu, Karnataka, Himachal Pradesh, Uttar Pradesh, Madhya Pradesh, Kerala, Andra Pradesh, Maharashtra, West Bengal, Gujrat and Goa<br>
+                               <b>Rainfall Range</b>:60-125cm</p></div>
+                                       
+                      <div class="bbox">
+                             <p>
+                             <img src="{{ url_for('static', filename='crop/Carrot.jpg') }}" width="160" height="175"></a>
+                             </p>
+                             <p style="width:575px ;">
+                                <b>Name:</b>Carrot<br>
+                                <b>Season:</b>Winter<br>
+                                <b>Location:</b>Haryana, Andhra Pradesh, Punjab, Bihar, Tamil Nadu, Karnataka, Assam<br>
+                                <b>Rainfall Range</b>:2.5cm</p></div> 
+
+                      <div class="bbox">
+                             <p>
+                             <img src="{{ url_for('static', filename='crop/Cauliflower.jpg') }}" width="160" height="175"></a>
+                             </p>
+                             <p style="width:575px ;">
+                               <b>Name:</b>Cauliflower<br>
+                               <b>Season:</b>Autumn and early winter<br>
+                               <b>Location:</b>Bihar, Uttar Pradesh, Orissa, West Bengal, Assam, Haryana and Maharashtra<br>
+                               <b>Rainfall Range</b>:12-12.5cm</p></div> 
+
+                      <div class="bbox">
+                             <p>
+                             <img src="{{ url_for('static', filename='crop/Chayote.jpg') }}" width="160" height="175"></a>
+                             </p>
+                             <p style="width:575px ;">
+                                <b>Name:</b>Chayote<br>
+                                <b>Season:</b>Summer<br>
+                                <b>Location:</b>Madurai and Nilgiri district of Tamil Nadu, Karnataka, West Bengal, Mandi district of Himachal Pradesh and entire north-eastern hills region<br>
+                                <b>Rainfall Range</b>:150-200cm</p></div>
+                                              
+                       <div class="bbox">
+                              <p>
+                                <img src="{{ url_for('static', filename='crop/Chili.jpg') }}" width="160" height="175"></a>
+                                </p>
+                                <p style="width:575px ;">
+                                   <b>Name:</b>Chili<br>
+                                   <b>Season:</b>Monsoon and winter<br>
+                                   <b>Location:</b>Andhra Pradesh, Tamil Nadu, Telangana, madhya pradesh, West Bengal and Orrisa<br>
+                                   <b>Rainfall Range</b>:25-30cm</p></div>
+                                            
+                       <div class="bbox">
+                               <p>
+                               <img src="{{ url_for('static', filename='crop/Cluster beans.jpg') }}" width="160" height="175"></a>
+                               </p>
+                               <p style="width:575px ;">
+                                  <b>Name:</b>Cluster beans<br>
+                                  <b>Season:</b>Summer and rainy<br>
+                                  <b>Location:</b>Rajasthan, Gujarat, Haryana, Uttar Pradesh<br>
+                                  <b>Rainfall Range</b>:30-50cm</p></div>
+                                                
+                        <div class="bbox">
+                                <p>
+                                <img src="{{ url_for('static', filename='crop/Coriander.jpg') }}" width="160" height="175"></a>
+                                </p>
+                                <p style="width:575px ;">
+                                   <b>Name:</b>Coriander<br>
+                                   <b>Season:</b>Autumn and winter<br>
+                                   <b>Location:</b>Andhra Pradesh, Tamil Nadu, Karnataka, Rajasthan and Madhya Pradesh<br>
+                                   <b>Rainfall Range</b>:7.5-10cm</p></div> 
+                                             
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Cotton.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Cotton<br>
+                                    <b>Season:</b>Monsoon<br>
+                                    <b>Location:</b>Punjab, Madhya Pradesh, Rajasthan, Karnataka, madhya pradesh, Karnataka and Gujarat<br>
+                                    <b>Rainfall Range</b>:50-100cm</p></div>
+
+                         <div class="bbox">
+                                <p>
+                                <img src="{{ url_for('static', filename='crop/Cucumber.jpg') }}" width="160" height="175"></a>
+                                </p>
+                                <p style="width:575px ;">
+                                   <b>Name:</b>Cucumber<br>
+                                   <b>Season:</b>Summer and rainy<br>
+                                   <b>Location:</b>Karnataka, Tamil Nadu, Andhra Pradesh<br>
+                                   <b>Rainfall Range</b>:20-30cm</p></div> 
+                                                  
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Custard apple.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Custard apple<br>
+                                    <b>Season:</b>Winter<br>
+                                    <b>Location:</b>Assam, Bihar, Madhya Pradesh, Maharashtra, Odisha, Rajasthan, and Uttar Pradesh, Andhra Pradesh, Telangana and Tamil Nadu<br>
+                                    <b>Rainfall Range</b>:50-80cm</p></div>
+                                                      
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Daisy.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Daisy<br>
+                                    <b>Season:</b>Winter<br>
+                                    <b>Location:</b>Himachal Pradesh and Kashmir<br>
+                                    <b>Rainfall Range</b>:2.54cm</p></div>
+                                                          
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Drumstick.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Drumstick<br>
+                                    <b>Season:</b>Rainy and spring<br>
+                                    <b>Location:</b>Kerala Karnataka, Andhra Pradesh and Tamil Nadu<br>
+                                    <b>Rainfall Range</b>:25-300cm</p></div>
+
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Fenugreek.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Fenugreek<br>
+                                    <b>Season:</b>Summer and winter<br>
+                                    <b>Location:</b>Gujarat, Madhya Pradesh, Chattisgarh,Uttar Pradesh and Rajasthan<br>
+                                    <b>Rainfall Range</b>:50-75cm</p></div>
+
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Garlic.jpeg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Garlic<br>
+                                    <b>Season:</b>Summer and winter<br>
+                                    <b>Location:</b>Gujrat,Madhya pradesh,UttarPradesh,Rajasthan and Tamil Nadu<br>
+                                    <b>Rainfall Range</b>:65-75cm</p></div>
+
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Ginger.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Ginger<br>
+                                    <b>Season:</b>Early spring and monsoon<br>
+                                    <b>Location:</b>Karnataka, Orissa, Assam, Meghalaya, Arunachal Pradesh and Gujarat<br>
+                                    <b>Rainfall Range</b>:250-300cm</p></div>
+                                                          
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Green amarnath.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Green amarnath<br>
+                                    <b>Season:</b>Summer<br>
+                                    <b>Location:</b>kerala, tamilnadu,karnataka, maharashtra,andhra pradesh, telangana and Amaranth<br>
+                                    <b>Rainfall Range</b>:20-270cm</p></div>
+                                                              
+                          <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Groundnuts.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                     <b>Name:</b>Groundnuts<br>
+                                     <b>Season:</b>Rainy and winter<br>
+                                     <b>Location:</b>Andhra Pradesh, Tamilnadu, Gujarat, Karnataka and Maharashtra<br>
+                                     <b>Rainfall Range</b>:50-100cm</p></div>
+
+                           <div class="bbox">
+                                   <p>
+                                   <img src="{{ url_for('static', filename='crop/Iris.jpg') }}" width="160" height="175"></a>
+                                   </p>
+                                   <p style="width:575px ;">
+                                      <b>Name:</b>Iris<br>
+                                      <b>Season:</b>Late spring and early summer<br>
+                                      <b>Location:</b>Jammu kashmir, Nepal<br>
+                                      <b>Rainfall Range</b>:70cm</p></div>
+
+                            <div class="bbox">
+                                   <p>
+                                    <img src="{{ url_for('static', filename='crop/Jasmine.jpg') }}" width="160" height="175"></a>
+                                    </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Jasmine<br>
+                                       <b>Season:</b>Spring and summer<br>
+                                       <b>Location:</b>Punjab, Andhra Pradesh, Tamil Nadu and Hyderabad<br>
+                                       <b>Rainfall Range</b>:80-100cm</p></div>
+
+                            <div class="bbox">
+                                    <p>
+                                    <img src="{{ url_for('static', filename='crop/Jute.jpg') }}" width="160" height="175"></a>
+                                    </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Jute<br>
+                                       <b>Season:</b>Rainy<br>
+                                       <b>Location:</b>WestBengal,Bihar,Assam,AP,Orrisa,Tripura,Meghalaya<br>
+                                       <b>Rainfall Range</b>:160-200cm</p></div>
+
+                             <div class="bbox">
+                                     <p>
+                                     <img src="{{ url_for('static', filename='crop/Kasturi methi.jpg') }}" width="160" height="175"></a>
+                                     </p>
+                                     <p style="width:575px ;">
+                                        <b>Name:</b>Kasturi methi<br>
+                                        <b>Season:</b>Spring to early autumn<br>
+                                        <b>Location:</b>Rajasthan followed by Gujarat, Madhya Pradesh and Uttaranchal<br>
+                                        <b>Rainfall Range</b>:50-75cm</p></div>
+
+                              <div class="bbox">
+                                     <p>
+                                     <img src="{{ url_for('static', filename='crop/Ladies finger.jpg') }}" width="160" height="175"></a>
+                                     </p>
+                                     <p style="width:575px ;">
+                                        <b>Name:</b>Ladies finger<br>
+                                        <b>Season:</b>Monsoon and winter<br>
+                                        <b>Location:</b>Uttar Pradesh, Bihar, West Bengal, Assam, Andhra Pradesh, Orissa and Karnataka<br>
+                                        <b>Rainfall Range</b>:88cm</p></div>
+
+                              <div class="bbox">
+                                   <p>
+                                   <img src="{{ url_for('static', filename='crop/Lilly.jpg') }}" width="160" height="175"></a>
+                                   </p>
+                                   <p style="width:575px ;">
+                                      <b>Name:</b>Lilly<br>
+                                      <b>Season:</b>Monsoon and spring<br>
+                                      <b>Location:</b>Manipur, Meghalaya, Arunachal Pradesh, Nagaland, and Tamil Nadu<br>
+                                      <b>Rainfall Range</b>:30cm</p></div>
+
+                              <div class="bbox">
+                                   <p>
+                                   <img src="{{ url_for('static', filename='crop/Lotus.jpg') }}" width="160" height="175"></a>
+                                   </p>
+                                   <p style="width:575px ;">
+                                      <b>Name:</b>Lotus<br>
+                                      <b>Season:</b>Summer<br>
+                                      <b>Location:</b>West Bengal<br>
+                                      <b>Rainfall Range</b>:100-200cm</p></div>
+
+                               <div class="bbox">
+                                    <p> 
+                                    <img src="{{ url_for('static', filename='crop/Maize.jpg') }}" width="160" height="175"></a>
+                                    </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Maize<br>
+                                       <b>Season:</b>Monsoon<br>
+                                       <b>Location:</b>Karnataka, madhya pradesh, Maharashtra, Uttar Pradesh, Rajasthan,Bihar, Himachal Pradesh,Andhra Pradesh<br>
+                                       <b>Rainfall Range</b>:50-100cm</p></div>
+
+                               <div class="bbox">
+                                    <p>
+                                    <img src="{{ url_for('static', filename='crop/Mango.jpg') }}" width="160" height="175"></a>
+                                     </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Mango<br>
+                                       <b>Season:</b>Summer<br>
+                                       <b>Location:</b>Andhra Pradesh, Uttar Pradesh, Karnataka, Bihar, Gujarat,Telangana, Tamil Nadu<br>
+                                       <b>Rainfall Range</b>:75-375cm</p></div>
+
+                               <div class="bbox">
+                                    <p>
+                                    <img src="{{ url_for('static', filename='crop/Millets.jpg') }}" width="160" height="175"></a>
+                                    </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Millets<br>
+                                       <b>Season:</b>Monsoon<br>
+                                       <b>Location:</b>Harayana, madhya pradesh, Karnataka, AP, Tamil Nadu, Telangana<br>
+                                       <b>Rainfall Range</b>:50-90cm</p></div>
+
+                               <div class="bbox">
+                                    <p>
+                                    <img src="{{ url_for('static', filename='crop/Mushroom.jpg') }}" width="160" height="175"></a>
+                                    </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Mushroom<br>
+                                       <b>Season:</b>Winter<br>
+                                       <b>Location:</b>Himachal Pradesh, Jammu, and Kashmir, hilly areas of Uttar Pradesh, and hilly areas of Tamil Nadu<br>
+                                       <b>Rainfall Range</b>:70cm</p></div>
+
+                               <div class="bbox">
+                                    <p>
+                                    <img src="{{ url_for('static', filename='crop/Mustard.jpg') }}" width="160" height="175"></a>
+                                    </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Mustard<br>
+                                       <b>Season:</b>Winter<br>
+                                       <b>Location:</b>Rajasthan, madhyapradesh,uttar pradesh,Harayana, Gujarat, Assam and West Bengal<br>
+                                       <b>Rainfall Range</b>:62.5-100cm</p></div>
+
+                               <div class="bbox">
+                                    <p>
+                                    <img src="{{ url_for('static', filename='crop/Onion.jpg') }}" width="160" height="175"></a>
+                                    </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Onion<br>
+                                       <b>Season:</b>Winter and monsoon<br>
+                                       <b>Location:</b>Maharashtra, Karnataka, madhya pradesh, Gujarat, Bihar, Rajasthan, Haryana and Telangana<br>
+                                       <b>Rainfall Range</b>:75-100cm</p></div>
+
+                               <div class="bbox">
+                                    <p>
+                                    <img src="{{ url_for('static', filename='crop/Orchid.jpg') }}" width="160" height="175"></a>
+                                    </p>
+                                    <p style="width:575px ;">
+                                       <b>Name:</b>Orchid<br>
+                                       <b>Season:</b>Spring and summer<br>
+                                       <b>Location:</b>Western Ghats, Deccan plateau and Andaman & Nicobar Islands<br>
+                                       <b>Rainfall Range</b>:300cm</p></div>
+
+                              <div class="bbox">
+                                   <p>
+                                   <img src="{{ url_for('static', filename='crop/pine apple.jpg') }}" width="160" height="175"></a>
+                                   </p>
+                                   <p style="width:575px ;">
+                                      <b>Name:</b>pine apple<br>
+                                      <b>Season:</b>Rainy and summer<br>
+                                      <b>Location:</b>Assam, West Bengal, Karnataka, Meghalaya, Manipur, Arunachal Pradesh, Kerala and Bihar<br>
+                                      <b>Rainfall Range</b>:60-250cm</p></div>
+
+                             <div class="bbox">
+                                  <p>
+                                  <img src="{{ url_for('static', filename='crop/pointed gourd.jpg') }}" width="160" height="175"></a>
+                                  </p>
+                                  <p style="width:575px ;">
+                                     <b>Name:</b>pointed gourd<br>
+                                     <b>Season:</b>Winter<br>
+                                     <b>Location:</b>Bihar, West Bengal, Eastern Uttar Pradesh and in Rajasthan, Madhya Pradesh, Gujarat, Assam and Maharashtra<br>
+                                     <b>Rainfall Range</b>:145cm</p></div>
+
+                             <div class="bbox">
+                                  <p>
+                                  <img src="{{ url_for('static', filename='crop/Potato.jpg') }}" width="160" height="175"></a>
+                                  </p>
+                                  <p style="width:575px ;">
+                                     <b>Name:</b>Potato<br>
+                                     <b>Season:</b>Winter<br>
+                                     <b>Location:</b>Uttar Pradesh, West Bengal, Punjab, Bihar and Gujarat<br>
+                                     <b>Rainfall Range</b>:120-200cm</p></div>
+
+                             <div class="bbox">
+                                  <p>
+                                  <img src="{{ url_for('static', filename='crop/Pumpkin.jpg') }}" width="160" height="175"></a>
+                                  </p>
+                                  <p style="width:575px ;">
+                                     <b>Name:</b>Pumpkin<br>
+                                     <b>Season:</b>Rainy<br>
+                                     <b>Location:</b>Throughout India and Orissa<br>
+                                     <b>Rainfall Range</b>:30-40cm</p></div>
+
+                             <div class="bbox">
+                                   <p>
+                                   <img src="{{ url_for('static', filename='crop/Ragi.jpg') }}" width="160" height="175"></a>
+                                   </p>
+                                   <p style="width:575px ;">
+                                      <b>Name:</b>Ragi<br>
+                                      <b>Season:</b>Monsoon<br>
+                                      <b>Location:</b>Rajasthan, Karnataka, AP, Tamil Nadu,Orissa and Maharashtra<br>
+                                      <b>Rainfall Range</b>:70-120cm</p></div>
+
+                             <div class="bbox">
+                                  <p>
+                                  <img src="{{ url_for('static', filename='crop/Rice.jpg') }}" width="160" height="175"></a>
+                                  </p>
+                                  <p style="width:575px ;">
+                                     <b>Name:</b>Rice<br>
+                                     <b>Season:</b>Monsoon and winter<br>
+                                     <b>Location:</b>West Bengal,uttar pradesh and Punjab<br>
+                                     <b>Rainfall Range</b>:175-300cm</p></div>
+
+                             <div class="bbox">
+                                  <p>
+                                  <img src="{{ url_for('static', filename='crop/Ridge gourd.jpg') }}" width="160" height="175"></a>
+                                  </p>
+                                  <p style="width:575px ;">
+                                     <b>Name:</b>Ridge gourd<br>
+                                     <b>Season:</b>Summer and rainy<br>
+                                     <b>Location:</b>Karnataka, Andhra Pradesh, Madhya Pradesh, Maharashtra and Orissa<br>
+                                     <b>Rainfall Range</b>:110cm</p></div>
+
+                             <div class="bbox">
+                                  <p>
+                                  <img src="{{ url_for('static', filename='crop/Rose.jpg') }}" width="160" height="175"></a>
+                                  </p>
+                                  <p style="width:575px ;">
+                                     <b>Name:</b>Rose<br>
+                                     <b>Season:</b>Early spring and summer<br>
+                                     <b>Location:</b>Karnataka, Tamil Nadu, Bihar, Uttar Pradesh, West Bengal, Maharashtra, Haryana, Gujarat, Punjab, Jammu and Kashmir, Madhya Pradesh and Andhra Pradesh<br>
+                                     <b>Rainfall Range</b>:20-30cm</p></div>
+
+                             <div class="bbox">
+                                  <p>
+                                  <img src="{{ url_for('static', filename='crop/Soyabean.jpg') }}" width="160" height="175"></a>
+                                  </p>
+                                  <p style="width:575px ;">
+                                     <b>Name:</b>Soyabean<br>
+                                     <b>Season:</b>Monsoon and spring<br>
+                                     <b>Location:</b>Madhya Pradesh, Maharashtra, Rajasthan, Karnataka, and Telangana<br>
+                                     <b>Rainfall Range</b>:50-100cm</p></div>
+
+                            <div class="bbox">
+                                 <p>
+                                 <img src="{{ url_for('static', filename='crop/Spinach.jpg') }}" width="160" height="175"></a>
+                                 </p>
+                                 <p style="width:575px ;">
+                                    <b>Name:</b>Spinach<br>
+                                    <b>Season:</b>Summer<br>
+                                    <b>Location:</b>Maharashtra, West Bengal, Gujarat, Andhra Pradesh, Telangana, Kerala, Tamil Nadu, Karnataka and Uttar Pradesh<br>
+                                    <b>Rainfall Range</b>:80-120cm</p></div>
+
+                           <div class="bbox">
+                                <p>
+                                <img src="{{ url_for('static', filename='crop/Spine gourd.jpg') }}" width="160" height="175"></a>
+                                </p>
+                                <p style="width:575px ;">
+                                   <b>Name:</b>Spine gourd<br>
+                                   <b>Season:</b>Summer and rainy<br>
+                                   <b>Location:</b>Chhattisgarh, Orissa, Uttar Pradesh, Maharashtra, Jharkhand, Karnataka and west Bengal<br>
+                                   <b>Rainfall Range</b>:150-250cm</p></div>
+
+                           <div class="bbox">
+                                <p>
+                                <img src="{{ url_for('static', filename='crop/Sponge gourd.jpg') }}" width="160" height="175"></a>
+                                </p>
+                                <p style="width:575px ;">
+                                   <b>Name:</b>Sponge gourd<br>
+                                   <b>Season:</b>Spring and rainy<br>
+                                   <b>Location:</b>U.P,Punjab, Bihar, Jharkhand, Gujarat, Rajasthan, Haryana and Delhi<br>
+                                   <b>Rainfall Range</b>:10-15cm</p></div>
+
+                           <div class="bbox">
+                                <p>
+                                <img src="{{ url_for('static', filename='crop/Spring Onion.jpg') }}" width="160" height="175"></a>
+                                </p>
+                                <p style="width:575px ;">
+                                   <b>Name:</b>Spring Onion<br>
+                                   <b>Season:</b>Winter and spring<br>
+                                   <b>Location:</b>Karnataka, Maharashtra, and Andhra Pradesh are the major Onion growing states in Kharif, while Rajasthan, Haryana, Madhya Pradesh, Gujarat and Uttar Pradesh<br>
+                                   <b>Rainfall Range</b>:65-75cm</p></div>
+
+                           <div class="bbox">
+                                <p>
+                                <img src="{{ url_for('static', filename='crop/Sugarcane.jpg') }}" width="160" height="175"></a>
+                                </p>
+                                <p style="width:575px ;">
+                                   <b>Name:</b>Sugarcane<br>
+                                   <b>Season:</b>Autumn and Spring<br>
+                                   <b>Location:</b>Uttar Pradesh, Maharashtra, Tamil Nadu,Bihar, Andhra Pradesh and Karnataka<br>
+                                   <b>Rainfall Range</b>:75-150cm</p></div>
+
+                         <div class="bbox">
+                              <p>
+                              <img src="{{ url_for('static', filename='crop/Sunflower.jpg') }}" width="160" height="175"></a>
+                              </p>
+                              <p style="width:575px ;">
+                                 <b>Name:</b>Sunflower<br>
+                                 <b>Season:</b>Summer and rainy<br>
+                                 <b>Location:</b>Karnataka, Andhra Pradesh, Maharashtra, Bihar, Orissa and Tamil Nadu<br>
+                                 <b>Rainfall Range</b>:50-75cm</p></div>
+
+                        <div class="bbox">
+                             <p>
+                             <img src="{{ url_for('static', filename='crop/Tinda.jpg') }}" width="160" height="175"></a>
+                             </p>
+                             <p style="width:575px ;">
+                                 <b>Name:</b>Tinda<br>
+                                 <b>Season:</b>Summer<br>
+                                 <b>Location:</b>Punjab and Uttar Pradesh<br>
+                                 <b>Rainfall Range</b>:20-30cm</p></div>
+
+                         <div class="bbox">
+                              <p>
+                              <img src="{{ url_for('static', filename='crop/Tomato.jpg') }}" width="160" height="175"></a>
+                              </p>
+                              <p style="width:575px ;">
+                                <b>Name:</b>Tomato<br>
+                                <b>Season:</b>Summer<br>
+                                <b>Location:</b>Andhra Pradesh, Tamil Nadu, Karnataka, Gujarat, odisha, West Bengal, Maharashtra, chattisgarh, Bihar, telengana, Uttar Pradesh and haryana<br>
+                               <b>Rainfall Range</b>:78cm</p></div>
+
+                         <div class="bbox">
+                              <p>
+                              <img src="{{ url_for('static', filename='crop/Tulip.jpg') }}" width="160" height="175"></a>
+                              </p>
+                              <p style="width:575px ;">
+                                 <b>Name:</b>Tulip<br>
+                                 <b>Season:</b>Spring and Autumn<br>
+                                 <b>Location:</b>Jammu and Kashmir, the hilly regions of Himachal Pradesh and Uttarakhand<br>
+                                 <b>Rainfall Range</b>:1.7cm</p></div>
+
+                         <div class="bbox">
+                              <p>
+                              <img src="{{ url_for('static', filename='crop/Turnip.jpg') }}" width="160" height="175"></a>
+                              </p>
+                              <p style="width:575px ;">
+                                <b>Name:</b>Turnip<br>
+                                <b>Season:</b>Spring and autumn<br>
+                                <b>Location:</b>Bihar, Haryana, Himachal Pradesh, Punjab and Tamil Nadu<br>
+                                <b>Rainfall Range</b>:150-300cm</p></div>
+
+                        <div class="bbox">
+                             <p>
+                             <img src="{{ url_for('static', filename='crop/Watermelon.jpg') }}" width="160" height="175"></a>
+                             </p>
+                             <p style="width:575px ;">
+                               <b>Name:</b>Watermelon<br>
+                               <b>Season:</b>Spring to early summer<br>
+                               <b>Location:</b>Maharashtra, Karnataka, Tamil Nadu, Punjab, Rajasthan, Madhya Pradesh and Uttar Pradesh<br>
+                               <b>Rainfall Range</b>:40-60cm</p></div>
+
+                       <div class="bbox">
+                            <p>
+                            <img src="{{ url_for('static', filename='crop/Wheat.jpg') }}" width="160" height="175"></a>
+                            </p>
+                            <p style="width:575px ;">
+                               <b>Name:</b>Wheat<br>
+                               <b>Season:</b>Winter<br>
+                               <b>Location:</b>UP, Punjab, Madhya Pradesh, Haryana, Rajasthan Bihar and Gujarat<br>
+                               <b>Rainfall Range</b>:75-100cm</p></div>
+  
+
+                </div>
+
+            </div>
+        </div>
+      </div></body>
+      </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab - youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rainfall Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/pred.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <div class="heads">
+		<h1>RAINFALL PREDICTION</h1>
+	  </div>
+      <div class="container">
+        <div class="img">
+          <a href="{{ url_for('rainfall') }}"><i class="fas fa-arrow-left" style="position: absolute;color:rgb(42, 42, 42);font-size:27px;margin-left:30px;margin-top:30px;" ></i></a>
+          <div class="title">Prediction Result</div>
+          <div class="content">
+            <div class="con_txt">
+                The Predicted Rainfall for the month is :
+                <div class="result">{{ msg }}</div>
+                </div> <br><br>
+                <div class="suggest"> 
+                <div style="margin-left:30px;list-style-type:square;list-style-position:outside;"
+
+                {%for item in list %} 
+                <ul style="list-style-type:square; font-size:18px;">
+                   <li>{{item}}</li>
+            </ul>
+                {% endfor %}
+                </div>
+            </div>
+                </div>
+            </div>
+        </div></div>
+</body>
+</html>
