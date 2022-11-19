@@ -1,0 +1,207 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100%;
+  background: rgb(194, 252, 155);
+  align-items: center;
+  justify-content: center;
+}
+.heads{
+  color: rgb(53, 152, 0);
+  font-style: italic;
+  font-family:monospace;
+  position: absolute;
+  padding-top:15px;
+  top:10px;
+  align-items: center;
+  margin-left: 590px;
+}
+.container
+  {margin-top: 125px;
+    margin-left:350px;
+    justify-content: center;
+    position: relative;
+    max-width: 850px;
+    height: 500px;
+    width: 850px;
+    background: #fff;
+    
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.container abbr{
+  text-decoration: none;
+}
+  .container .img{
+    background: url("girl-half.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    width: 850px;
+    opacity:1;
+  }
+  .link {
+    font-size: 19px;
+    color: black;
+    font-weight: 400;
+  }
+nav {
+  position:relative;
+  top: 0;
+  left: 0;
+  height:85px;
+  width: 850px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  
+  
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+.logo .menu-icon {
+  color: #333;
+  font-size: 35px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+nav .sidebar {
+  margin-top:130px;
+    margin-left:350px;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height:500px;
+  width: 260px;
+  padding: 20px 0;
+  color: #fff;
+  
+  transition: all 0.4s ease;
+}
+nav.open .sidebar {
+  left: 0;
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.list .nav-link .ion{
+  color: black;
+  font-size:25px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.lists .nav-link:hover {
+  background-color: rgb(53, 152, 0);
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+.nav-link .link {
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
+}
+
+.title{
+  left:300px;
+  top:10px;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  font-size: 27px;
+  font-weight: 500;
+  color: #333;
+
+}
+.container  .title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: rgb(53, 152, 0);
+}
+.form-content .input-boxes{
+  margin-top: 430px;
+  margin-left:120px;
+ 
+}
+.form-content .input-boxes .btn{
+  
+  margin-top: 20px;
+
+}
+.form-content .input-boxes .btn_input{ 
+  color: black;
+  background: rgba(124, 250, 40, 0);
+  
+  border-radius:40px;
+  width: 300px;
+  height: 50px;
+  padding:10px;
+  font-size:20px;
+  font-weight: 500;
+  cursor: pointer;
+  left: 50px;
+  transition: all 0.4s ease;
+}
+.form-content .btn .btn_input:hover{
+  background: rgb(53, 152, 0);
+  color: #fff;
+}
+.msg{
+  color: rgb(196, 0, 0);
+  font-size: 21px;
+  font-weight: 500;
+}
