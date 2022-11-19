@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100%;
+  background: rgb(194, 252, 155);
+  align-items: center;
+  justify-content: center;
+}
+.heads{
+  color: rgb(53, 152, 0);
+  font-style: italic;
+  font-family:monospace;
+  position: absolute;
+  padding-top:15px;
+  top:10px;
+  align-items: center;
+  margin-left: 590px;
+}
+.container
+  {margin-top: 125px;
+    margin-left:350px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 850px;
+    height: 500px;
+    width: 850px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.container abbr{
+  text-decoration: none;
+}
+  .container .img{
+    align-items: center;
+    background: url("girl-half.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    width: 850px;
+    opacity:1;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+  }
+  .img i{
+  position: absolute;
+  color:rgb(42, 42, 42);
+  font-size:27px;
+  margin-left:-390px;
+  margin-top:-40px;
+}
+
+.top
+{
+    align-self: center;
+margin:auto;
+text-align:justify;
+padding:10px;
+font-size:20px;
+
+}
+
+.bbox
+{
+margin:auto;
+width:800px;
+height:200px;
+float:top;
+
+box-sizing:border-box;
+padding:20px;
+position:relative;
+}
+.bbox p
+{
+  align-items: center;
+  text-align:justify;
+  background-color: #fff;
+  height:200px;
+font-size: 17px;
+font-weight: 800;
+float:left;
+border:1px solid black;
+box-sizing:border-box;
+padding:10px;
+position:relative;
+margin-top: 10px;
+}
+.bbox b{
+  color:rgb(53, 152, 0);
+}
+.title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin-left:335px;
+  margin-top:20px;
+ 
+}
+.title:before{
+  content: '';
+  position: absolute;
+
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: rgb(53, 152, 0);
+}
+
+
