@@ -1,0 +1,157 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(194, 252, 155);
+  padding: 10px;
+}
+.heads{
+  color: rgb(53, 152, 0);
+  font-style: italic;
+  font-family:monospace;
+  position: absolute;
+  padding-top:15px;
+  top:10px;
+
+}
+.container{
+  position: relative;
+  height: 500px;
+  width: 850px;
+  
+  perspective: 2700px;
+}
+
+.contact-box{
+  height: 500px;
+  width: 850px;
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	
+}
+
+.left{
+	background: url("girl.jpg") no-repeat center;
+	background-size: cover;
+	height: 500px;
+}
+
+.right{
+  background-size: cover;
+  height: 500px;
+	padding:0px 30px;
+}
+.container .forms{
+    background:#fff;
+  }
+  .container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+   margin-top: 25px;
+  }
+  .title:before{
+    content: '';
+    position: absolute;
+    left: 139px;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: rgb(53, 152, 0);
+  }
+  
+  .forms .form-content .input-boxes{
+    margin-top:20px;
+  }
+  .forms .form-content .input-box{
+    display: flex;
+    align-items: center;
+    height:45px;
+    width: 130%;
+    margin: 10px 0;
+    position: relative;
+  }
+  .form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  .forms .form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color:#333;
+    text-decoration: none;
+  }
+  .forms .form-content label{
+    color: rgb(53, 152, 0);
+    cursor: pointer;
+  }
+  .forms .form-content label:hover{
+    text-decoration: underline;
+  }
+  .forms .form-content .sign-up-text{
+    text-align: center;
+    margin-top: 25px;
+    margin-left:30px;
+  }
+  .form-content .input-box input:focus,
+.form-content .input-box input:valid{
+  border-color: rgb(53, 152, 0);
+}
+.form-content .input-box i{
+  position: absolute;
+  color: rgb(53, 152, 0);
+  font-size: 17px;
+}
+.forms .form-content .text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.forms .form-content .text a{
+  text-decoration: none;
+}
+.forms .form-content .text a:hover{
+  text-decoration: underline;
+}
+.forms .form-content .button{
+  color: #fff;
+  margin-top: 30px;
+}
+.forms .form-content .button input{
+  color: #fff;
+  background: rgb(53, 152, 0);
+  border-radius:40px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.forms .form-content .button input:hover{
+  background: rgb(33, 98, 0);
+}
