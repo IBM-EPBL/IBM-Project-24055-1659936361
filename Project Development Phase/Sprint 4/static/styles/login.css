@@ -1,0 +1,295 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(194, 252, 155);
+  padding: 30px;
+}
+.heads{
+  color: rgb(53, 152, 0);
+  font-style: italic;
+  font-family:monospace;
+  position: absolute;
+  padding-top:15px;
+  top:10px;
+
+}
+.container{
+  position: relative;
+  height: 500px;
+    width: 850px;
+  background: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  perspective: 2700px;
+}
+.container .cover{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  transform-origin: left;
+  transform-style: preserve-3d;
+}
+
+ .container .cover .front,
+ .container .cover .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.cover .back{
+  transform: rotateY(180deg);
+  backface-visibility:hidden;
+}
+.container .cover::before,
+.container .cover::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+  opacity: 0.5;
+  z-index: 12;
+}
+.container .cover::after{
+  opacity: 0.3;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .cover img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.container .cover .text{
+  position: absolute;
+  z-index: 130;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cover .text .text-1,
+.cover .text .text-2{
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.cover .text .text-2{
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .forms{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.container .form-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-content .login-form{
+  width: calc(100% / 2 - 25px);
+}
+ .title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+.title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: rgb(53, 152, 0);
+}
+.forms .signup-form  .title:before{
+  width: 20px;
+}
+.forms .form-content .input-boxes{
+  margin-top: 30px;
+}
+.forms .form-content .input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+.form-content .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+  border-color: rgb(53, 152, 0);
+}
+.form-content .input-box i{
+  position: absolute;
+  color: rgb(53, 152, 0);
+  font-size: 17px;
+}
+.forms .form-content .text{
+  font-size:16px;
+  font-weight: 500;
+  color:#333;
+  text-decoration: none;
+}
+.forms .form-content .text a{
+  text-decoration: none;
+}
+.forms .form-content .text a:hover{
+  color: rgb(53, 152, 0);
+}
+.forms .form-content .button{
+  color: #fff;
+  margin-top:10px;
+}
+
+.forms .form-content .button input{
+  color: #fff;
+  background: rgb(53, 152, 0);
+  border-radius:40px;
+  height:40px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.forms .form-content .button input:hover{
+  background: rgb(33, 98, 0);
+}
+.forms .form-content label{
+  color: rgb(53, 152, 0);
+  cursor: pointer;
+}
+.forms .form-content label:hover{
+  text-decoration: underline;
+}
+.forms .form-content .forgot{
+  text-align: left;
+  text-decoration: none;
+}
+.forms .form-content .login-text{
+  text-align: center;
+  margin-top: 25px;
+}
+.container #flip{
+  display: none;
+}
+@media (max-width: 730px) {
+  .container .cover{
+    display: none;
+  }
+  .form-content .login-form,
+  .form-content .signup-form{
+    width: 100%;
+  }
+  .container #flip:checked ~ .forms .login-form{
+    display: none;
+  }
+}
+
+.button1{
+  color: #fff;
+  margin-top:30px;
+}
+
+.button1 input{
+  color: #fff;
+  background: rgb(53, 152, 0);
+  border-radius:40px;
+  height:40px;
+  width: 300px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.button1 input:hover{
+  background: rgb(33, 98, 0);
+}
+
+.input-boxes1{
+  margin-top: 30px;
+}
+.input-box1{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  margin: 10px 0;
+  margin-top:15px;
+  position: relative;
+}
+.input-box1 input{
+  height: 100%;
+  width: 180%;
+  outline: none;
+  border: none;
+  padding: 0px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.input-box1 i{
+  position: absolute;
+  color: rgb(53, 152, 0);
+  font-size: 17px;
+}
+a{
+  text-decoration: none;
+}
+
+
+.contact-box{
+  height: 500px;
+  width: 850px;
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	
+}
+
+.left{
+	background: url("girl.jpg") no-repeat center;
+	background-size: cover;
+	height: 500px;
+}
+
