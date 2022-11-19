@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/stylelikes.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/homestyle.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN Link -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+	<div class="heads">
+		<h1>RAINFALL PREDICTION</h1>
+	</div>
+	<div class="container">
+		<div class="img">
+	    <nav>
+		<div class="logo">
+			<abbr title="More options">
+		  <i class="bx bx-menu menu-icon"></i>
+		  
+		</div>
+  
+		<div class="sidebar">
+			<div class="logo"><abbr title="More options">
+			<i class="bx bx-menu menu-icon"></i>
+			<span class="link" >Home</span>
+		</div>
+  
+		<div class="sidebar-content">
+			<ul class="lists">
+
+				<li class="list"><abbr title="To know more about us">
+				<a href="#aboutus" class="nav-link">
+				  <i class='bx bx-info-circle bx-tada-hover ion'></i>
+				  <span class="link">About Us</span>
+				</a>
+    			  </li>
+				<li class="list"><abbr title="For any quries">
+				<a href="#contact" class="nav-link">
+				  <i class='bx bx-envelope bx-tada-hover ion'></i>
+				  <span class="link">Contact Us</span>
+				</a>
+			  </li>
+			  <li class="list"><abbr title="how much you like our app">
+				<a href="#ratings" class="nav-link">
+				  <i class='bx bxs-like bx-tada-hover ion'></i>
+				  <span class="link">Ratings</span>
+				</a>
+			  </li>
+			  <li class="list"><abbr title="to logout">
+				<a href="{{ url_for('logout') }}" class="nav-link">
+				  <i class='bx bx-log-out-circle bx-tada-hover ion'></i>
+				  <span class="link">Log Out</span>
+				</a>
+			  </li>
+			</ul>
+  		  </div>
+		</div>
+	<div class="title">Home</div>
+      <div class="form-content">
+        <div class="input-boxes">
+        <div class="btn">
+            <a href="{{ url_for('rainfall') }}"><abbr title="predicts rainfall">
+                <button class="btn_input">Rainfall Prediction</button></a>
+        </div>
+        <div class="btn">
+            <a href="{{ url_for('crop') }}"><abbr title="a brief details about crops">
+                <button class="btn_input">Crops</button></a>
+        </div></div>
+        <br><br>
+		 <div style="color:#fff; font: size 30px; font-weight:600; text-align:center; margin-left:100px;">{{ msg }}</div>
+         
+    </div>
+    </nav>
+</div></div>
+	  
+
+<div id="aboutus" class="overl">
+	<div class="popup">
+		<h2>About Us</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			The purpose of the web application is to predict the average rainfall in a month.
+			 It also provides the suggestions of crops that can be grown.
+			 It also provides the information about all the crops like food, feed, fiber, oil, 
+			 flowers etc. It is a machine learning model with Snap Random Forest algorithm. We have used the best
+			  regressor algorithm provide by auto AI feature by the IBM Watson Studio & IBM cloud 
+			  for storage and deployment. The dataset used is the Indian rainfall data from 
+			  data.gov.in website. We have used the mot popular Twilio services for the OTP generation
+			   and sending of Messages. Python flask Web framework for the Backend purpose and for 
+			   frontend, HTML, CSS and JavaScript are used. The user data are stored in database 
+			  created by MySQL. We are open to suggestion for improvement of our project.
+</div>
+	</div>
+</div>
+<div id="contact" class="overl">
+	<div class="popup">
+		<h2>Contact Us</h2>
+		<a class="close" href="#">&times;</a>
+	
+		<div class="content">
+			<div class="address details">
+				<i class="fas fa-map-marker-alt"></i>
+				<div class="topic">Address</div>
+				<div class="text-one">PMC Tech,Hosur</div>
+				
+			  </div>
+			  <div class="phone details">
+				<i class="fas fa-phone-alt"></i>
+				<div class="topic">Phone</div>
+				<div class="text-one">+91 9384299337</div>
+				
+			  </div>
+			  <div class="email details">
+				<i class="fas fa-envelope"></i>
+				<div class="topic">Email</div>
+				<div class="text-one">rainfall.ml45@gmail.com</div>
+				
+			  </div>
+			   <form action="{{ url_for('review') }}" method="post">
+			  <textarea class="review" name="review" rows="4" cols="63"
+			  placeholder="Help us get better with your suggestions"></textarea>
+			  <div class="button input-box">
+				<input type="submit" value="Sumbit">
+			  </div></form>
+		</div></div>
+	</div>
+</div>
+<div id="ratings" class="overl">
+	<div class="wrapper">
+	<div class="popup">
+		<h2>Ratings</h2>
+		<a class="close" href="#">&times;</a>
+		<form action="{{ url_for('rate') }}" method="post">
+			<input type="radio" name="rate" value=1 id="star-1">
+			<input type="radio" name="rate" value=2 id="star-2">
+			<input type="radio" name="rate" value=3 id="star-3">
+			<input type="radio" name="rate" value=4  id="star-4">
+			<input type="radio" name="rate" value=5 id="star-5">
+				<div class="content-like">
+				  <div class="outer">
+					<div class="emojis">
+						<li class="slideImg"><img src="{{ url_for('static', filename='styles/img1.jpg') }}" alt=""></li>
+						<li><img src="{{ url_for('static', filename='styles/img2.jpg') }}" alt=""></li>
+						<li><img src="{{ url_for('static', filename='styles/img3.jpg') }}" alt=""></li>
+						<li><img src="{{ url_for('static', filename='styles/img4.jpg') }}" alt=""></li>
+						<li><img src="{{ url_for('static', filename='styles/img5.jpg') }}" alt=""></li>
+					</div>
+				  </div>
+				  <div class="stars">
+					<label for="star-1" class="star-1 fas fa-star"></label>
+					<label for="star-2" class="star-2 fas fa-star"></label>
+					<label for="star-3" class="star-3 fas fa-star"></label>
+					<label for="star-4" class="star-4 fas fa-star"></label>
+					<label for="star-5" class="star-5 fas fa-star"></label>
+				  </div>
+				  <div class="button input-box">
+					<input type="submit" value="Sumbit">
+				  </div>
+				</div> 
+</form>
+				<div class="footer">
+				  <span class="text"></span>
+				  <span class="numb"></span>
+				</div>
+			  </div>
+</div>
+
+<script>
+	const navBar = document.querySelector("nav"),
+	  menuBtns = document.querySelectorAll(".menu-icon"),
+	  overlay = document.querySelector(".overlay");
+
+	menuBtns.forEach((menuBtn) => {
+	  menuBtn.addEventListener("click", () => {
+		navBar.classList.toggle("open");
+	  });
+	});
+
+	overlay.addEventListener("click", () => {
+	  navBar.classList.remove("open");
+	});
+  </script>
+
+</body></html>

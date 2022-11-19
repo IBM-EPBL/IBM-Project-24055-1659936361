@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab - youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rainfall Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/rainfall.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <div class="heads">
+		<h1>RAINFALL PREDICTION</h1>
+	  </div>
+  <div class="container">
+    <div class="img">
+    <div class="content">
+      <form action="{{ url_for('rainfall') }}" method="post">
+        
+        <div class="user-details">
+          <div class="input-box">
+            <a href="{{ url_for('home') }}"><i class="fas fa-arrow-left"></i></a>
+            <span class="details">Month</span>
+            <select name="month" id="Month" required>
+              <option value="" disabled selected hidden>Select a Month</option>
+              <option value="JAN">JANUARY</option>
+              <option value="FEB">FEBRUARY</option>
+              <option value="MAR">MARCH</option>
+              <option value="APR">APRIL</option>
+              <option value="MAY">MAY</option>
+              <option value="JUN">JUNE</option>
+              <option value="JUL">JULY</option>
+              <option value="AUG">AUGUST</option>
+              <option value="SEP">SEPTEMBER</option>
+              <option value="OCT">OCTOBER</option>
+              <option value="NOV">NOVEMBER</option>
+              <option value="DEC">DECEMBER</option>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Location</span>
+            <select style="padding-left: 20px;"  name="location" id="Location"required >
+              <option value="" disabled selected hidden>Select Your Location</option>
+              <option value="ANDAMAN & NICOBAR ISLANDS">ANDAMAN & NICOBAR ISLANDS</option>
+              <option value="RAYALSEEMA">ANDHRA PRADESH -RAYALSEEMA</option>
+              <option value="COASTAL ANDHRA PRADESH">ANDHRA PRADESH-COASTAL</option>
+              <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+              <option value="ASSAM & MEGHALAYA">ASSAM</option>
+              <option value="BIHAR">BIHAR</option>
+              <option value="HARYANA DELHI & CHANDIGARH">CHANDIGARH</option>
+              <option value="CHHATTISGARH">CHHATTISGARH</option>
+              <option value="HARYANA DELHI & CHANDIGARH">DELHI</option>
+              <option value="KONKAN & GOA">GOA</option>
+              <option value="GUJARAT REGION">GUJARAT</option>
+              <option value="SAURASHTRA & KUTCH">GUJARAT-KUTCH</option>
+              <option value="SAURASHTRA & KUTCH">GUJARAT-SAURASHTRA</option>
+              <option value="HARYANA DELHI & CHANDIGARH">HARYANA </option>
+              <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+              <option value="JAMMU & KASHMIR">JAMMU & KASHMIR</option>
+              <option value="JHARKHAND">JHARKHAND</option>
+              <option value="COASTAL KARNATAKA">KARNATAKA-COASTAL</option>
+              <option value="NORTH INTERIOR KARNATAKA">KARNATAKA-NORTH INTERIOR</option>
+              <option value="SOUTH INTERIOR KARNATAKA">KARNATAKA-SOUTH INTERIOR</option>
+              <option value="KERALA">KERALA</option>
+              <option value="LAKSHADWEEP">LAKSHADWEEP</option>
+              <option value="MADHYA MAHARASHTRA">MADHYA PRADESH</option>
+              <option value="EAST MADHYA PRADESH">MADHYA PRADESH-EAST</option>
+              <option value="WEST MADHYA PRADESH">MADHYA PRADESH-WEST</option>
+              <option value="MADHYA MAHARASHTRA">MAHARASHTRA</option>
+              <option value="MATATHWADA">MAHARASHTRA-MARATHWADA</option>
+              <option value="VIDARBHA">MAHARASHTRA-VIDARBHA</option>
+              <option value="NAGA MANI MIZO TRIPURA">MANIPUR</option>
+              <option value="ASSAM & MEGHALAYA">MEGHALAYA</option>
+              <option value="NAGA MANI MIZO TRIPURA">MIZORAM</option>
+              <option value="NAGA MANI MIZO TRIPURA">NAGALAND</option>
+              <option value="ORISSA">ORISSA</option>
+              <option value="PUNJAB">PUNJAB</option>
+              <option value="EAST RAJASTHAN">RAJASTHAN-EAST</option>
+              <option value="WEST RAJASTHAN">RAJASTHAN-WEST</option>
+              <option value="SUB HIMALAYAN WEST BENGAL & SIKKIM">SIKKIM</option>
+              <option value="TAMIL NADU">TAMIL NADU</option>
+              <option value="TELANGANA">TELANGANA</option>
+              <option value="NAGA MANI MIZO TRIPURA">TRIPURA</option>
+              <option value="EAST UTTAR PRADESH">UTTAR PRADESH-EAST</option>
+              <option value="WEST UTTAR PRADESH">UTTAR PRADESH-WEST</option>
+              <option value="UTTARAKHAND">UTTARAKHAND</option>
+              <option value="GANGETIC WEST BENGAL">WEST BENGAL</option>
+          </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Year</span>
+            <input type="number" name="year" placeholder="Enter the Year" required>
+          </div>
+        <div class="button">
+          <input type="submit" value="Predict">
+        </div>
+        <div style="color:#fff; font: size 30px; font-weight:600; text-align:center">{{ msg }}</div>
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
